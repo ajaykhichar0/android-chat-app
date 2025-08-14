@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="delete">Delete</string>
+    <string name="sender_name">You</string>
+    <string name="receiver_name">Friend</string>
+    <string name="swipe_left_to_delete">Swipe left to delete</string>
+</resources>
