@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:gravity="start">
+
+    <!-- Message Container -->
+    <LinearLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="48dp"
+        android:maxWidth="280dp">
+
+        <!-- Message Bubble -->
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_message_receiver"
+            android:textColor="@color/receiver_text"
+            android:textSize="14sp"
+            android:layout_gravity="start"
+            android:text="Sample receiver message" />
+
+        <!-- Receiver Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/receiver_name"
+            android:textColor="@color/receiver_text"
+            android:textSize="10sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="2dp"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+    <!-- Delete Button (Initially Hidden) -->
+    <LinearLayout
+        android:id="@+id/deleteContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/deleteIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:text="✕"
+            android:textColor="@color/delete_button"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@android:drawable/btn_default"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textColor="@color/delete_button"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:background="@android:drawable/btn_default" />
+
+    </LinearLayout>
+
+</LinearLayout>
